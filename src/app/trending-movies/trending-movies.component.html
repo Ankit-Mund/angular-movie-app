@@ -1,0 +1,11 @@
+<h1>
+    Trending
+  </h1>
+  <ul>
+    <mat-grid-list cols="4">
+    <mat-grid-tile *ngFor="let trendingmovie of trending" (click)="goToDetails()">
+        <img mat-card-image src="https://image.tmdb.org/t/p/w500/{{trendingmovie.poster_path}}">
+    </mat-grid-tile>
+    </mat-grid-list>
+        
+  </ul>
